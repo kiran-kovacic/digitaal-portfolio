@@ -1,39 +1,182 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
-    <script src="https://use.fontawesome.com/4d8495e6c4.js"></script>
-    <link rel="stylesheet" type="text/css" href="digitaal-portfolio.css">
-    <meta charset="utf-8">
-    <title>Digitaal-portfolio</title>
-  </head>
-  <body>
-    <header>
-      <h1>Digitaal portfolio</h1>
-    </header>
-    <nav>
-      <ul id="nav-ul">
-        <li class="nav-li"><a class="nav-a" href="C:\Users\kkovacic\Documents\Atom projecten\digitaal-portfolio\index.html">Home</a></li>
-        <li class="nav-li"><a class="nav-a" href="C:\Users\kkovacic\Documents\Atom projecten\digitaal-portfolio\Opleiding.html">Opleiding</a></li>
-        <li class="nav-li"><a class="nav-a" href="C:\Users\kkovacic\Documents\Atom projecten\digitaal-portfolio\Overmij.html">Overmij</a></li>
-        <li class="nav-li"><a class="nav-a" href="C:\Users\kkovacic\Documents\Atom projecten\digitaal-portfolio\Beroep.html">Beroep</a></li>
-        <li class="nav-li"><a class="nav-a" id="github" href="https://github.com/kiran-kovacic"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-      </ul>
-    </nav>
-    <div>
-      <main>
-        <p>
-          
-        </p>
-      </main>
-      <aside>
-
-      </aside>
-    </div>
-    <footer>
-      <p class="p-footer">Contact gegevens:</p><p class="p3-footer">Kiran Kovacic,2017</p>
-      <p class="p2-footer">Telefoon: 06-81761492</p>
-      <p class="p2-footer">E-mail: kiran.kovacic@gmail.com</p>
-    </footer>
-  </body>
+<html lang="nl">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>digitaal-portfolio</title>
+		<meta name="author" content="Alvaro Trigo Lopez" />
+		<meta name="description" content="fullPage fixed full-screen backgrounds." />
+		<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed,fullscreen,backgrounds,full-screen" />
+		<meta name="Resource-type" content="Document" />
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<script src="https://use.fontawesome.com/4d8495e6c4.js"></script>
+		<link rel="stylesheet" type="text/css" href="portfolio_text.css">
+		<link rel="stylesheet" type="text/css" href="fullPage.js/jquery.fullPage.css" />
+		<link rel="stylesheet" type="text/css" href="fullPage.js/examples.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="fullPage.js/scrolloverflow.js"></script>
+		<script type="text/javascript" src="fullPage.js/jquery.fullPage.js"></script>
+		<script type="text/javascript" src="fullPage.js/examples.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					verticalCentered: false,
+	//to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+					css3:false
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<nav>
+				<ul id="nav-ul">
+					<li class="nav-li"><a class="nav-a" href="#section0">Home</a></li>
+					<li class="nav-li"><a class="nav-a" href="#section1">Opleiding</a></li>
+					<li class="nav-li"><a class="nav-a" href="#section2">Over mij</a></li>
+					<li class="nav-li"><a class="nav-a" href="#section3">Beroep</a></li>
+					<li class="nav-li"><a class="fontawesome" href="https://github.com/kiran-kovacic"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+					<li class="nav-li"><a class="fontawesome" href="https://www.linkedin.com/in/kiran-kovacic-591466151/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+				</ul>
+			</nav>
+		<div id="fullpage">
+			<div class="section " id="section0">
+				<article>
+					<h1>Home</h1>
+					<div id="home">
+						<section id="overmij">
+							<h2>Over mij</h2>
+							<p>
+								Mijn naam is Kiran Kovacic, ik ben 17 jaar en woon in Krimpen aan den IJssel. Mijn  persoonlijkheid is rustig, gestructureerd en gedreven. Ik kan goed zelfstandig werken maar natuurlijk ook in teamverband. Ik volg de opleiding applicatie ontwikkelaar op het davinci college in Dorderecht.
+							</p>
+						</section>
+						<section id="projecten">
+							<h2>opdrachten & projecten</h2>
+							<ul class="opdrachten-lijst">
+								<li class="lidoetmoeilijk"><i class="fa fa-html5" aria-hidden="true"></i> HTML & <i class="fa fa-css3" aria-hidden="true"></i> CSS</li>
+								<li><a class="opdrachten" href="https://github.com/kiran-kovacic/de-vloot">De vloot</a></li>
+								<li class="p2">Bij de vloot moest ik een voorbeeld namaken waarbij ik float heb toegepast.</li>
+								<li><a class="opdrachten" href="https://github.com/kiran-kovacic/layout">Layout</a></li>
+								<li class="p2">In de layout opdracht heb ik deze opdracht een nieuwsportaal over mijn hobby gemaakt.</li>
+								<li><a class="opdrachten" href="https://github.com/kiran-kovacic/handy">Handy</a></li>
+								<li class="p2">Bij de handy opdracht moest ik net zoals de vloot opdracht en de grid opdracht een voorbeeld namaken. in deze opdracht heb ik met position alle afbeeldingen de juiste positie gegeven.</li>
+								<li><a class="opdrachten" href="https://github.com/kiran-kovacic/robotarm">Robotarm</a></li>
+								<li class="p2">Robotarm was een introductie voor javascript.</li>
+							</ul>
+						</section>
+						<section id="cv">
+							<h2>Curriculum vitae</h2>
+							<h3>Opleiding</h3>
+							<table>
+								<tr>
+									<td>sep 2013 t/m jun 2017</td>
+									<td>HAVO IJssel college in Capelle aan den IJssel.</td>
+								</tr>
+								<tr>
+									<td>sep 2017 t/m heden</td>
+									<td>MBO applicatie ontwikkelaar op het Davinci college in Dordrecht.</td>
+								</tr>
+							</table>
+							<h3>Vaardigheden</h3>
+							<p>Ik kan goed overweg met computers en met de computertalen HTML, Python.</p>
+							<h3>Werkervaring</h3>
+							<p>-</p>
+						</section>
+					</div>
+				</article>
+			</div>
+			<div class="section" id="section1">
+				<div class="slide" id="slide1">
+					<article>
+						<h1>Opleiding</h1>
+						<h2>Vakken</h2>
+						<p>De vakken die ik op de opleiding krijg zijn: nederlands, engels, rekenen, programmeren en loopbaan & burgerschap.</p>
+						<h3>Programmeren</h3>
+						<p>In de programmeerlessen maken we de opdrachten die je op de pagina hiernaast ziet. In de les heb ik onder andere geleerd hoe je de float moet toepassen en hoe je position: absolute, relative, fixed, static en sticky moet toepassen. Ook heb ik geleerd hoe ik de semantische elementen van HTML5 moet toepassen.</p>
+						<h3>Loopbaan & Burgerschap</h3>
+						<p>In de loopbaan & burgerschap lessen hebben we het gehad over hoe wij op social media reagerd. En tijdens de week van het pesten hadden we het over pesten.</p>
+					</article>
+				</div>
+				<div class="slide" id="slide2">
+					<article>
+						<h1>Opleiding</h1>
+						<h2>Projecten & Opdrachten</h2>
+						<ul class="opdrachten-lijst">
+							<li class="lidoetmoeilijk"><i class="fa fa-html5" aria-hidden="true"></i> HTML & <i class="fa fa-css3" aria-hidden="true"></i> CSS</li>
+							<li id="lol"><a class="opdrachten" href="https://github.com/kiran-kovacic/wie-ben-ik">Wie ben ik</a></li>
+							<li class="p2">Wie ben ik was de eerste opdracht die ik moest maken bij deze opleiding. Hierin heb ik iets over mijzelf verteld.</li>
+							<li><a class="opdrachten" href="https://github.com/kiran-kovacic/recepten">Recepten</a></li>
+							<li class="p2">In de opdracht recepten moest ik een recepten site maken.</li>
+							<li><a class="opdrachten" href="https://github.com/kiran-kovacic/de-vloot">De vloot</a></li>
+							<li class="p2">Bij de vloot moest ik een voorbeeld namaken waarbij ik float heb toegepast.</li>
+							<li><a class="opdrachten" href="https://github.com/kiran-kovacic/layout">Layout</a></li>
+							<li class="p2">In de layout opdracht heb ik deze opdracht een nieuwsportaal over mijn hobby gemaakt.</li>
+							<li><a class="opdrachten" href="https://github.com/kiran-kovacic/grid">Grid</a></li>
+							<li class="p2">Met de grid opdracht moest ik net zoals bij de vloot opdracht een voorbeeld namaken.</li>
+							<li><a class="opdrachten" href="https://github.com/kiran-kovacic/handy">Handy</a></li>
+							<li class="p2">Bij de handy opdracht moest ik net zoals de vloot opdracht en de grid opdracht een voorbeeld namaken. in deze opdracht heb ik met position alle afbeeldingen de juiste positie gegeven.</li>
+							<li><a class="opdrachten" href="https://github.com/kiran-kovacic/robotarm">Robotarm</a></li>
+							<li class="p2">Robotarm was een introductie voor javascript.</li>
+						</ul>
+					</article>
+				</div>
+			</div>
+			<div class="section" id="section2">
+				<div class="slide" id="slide3">
+					<article>
+						<h1>Over mij</h1>
+						<img id="ik" src="pictures/img_29112.jpg" alt="Kiran Kovacic">
+						<h2>Wie ben ik</h2>
+						<p>
+							Mijn naam is Kiran Kovacic, ik ben 17 jaar en woon in Krimpen aan den IJssel. Mijn  persoonlijkheid is rustig, gestructureerd en gedreven. Ik kan goed zelfstandig werken maar natuurlijk ook in teamverband. Ik volg de opleiding applicatie ontwikkelaar op het davinci college in Dorderecht.
+						</p>
+						<p>
+							mijn hobby's is scouting, ik zit bij scoutinggroep Christiaan de Wet in Ouderkerk.
+							<img id="meer" src="pictures/img_2781.jpg" alt="meer">
+							Ik zit bij de explo's (Explorers). Bij de explo's moeten we zelf de opkomsten invullen en zelf kampen organieseren. Daarbij krijgen we hulp van de begeleiding.
+							We proberen elke opkomst iets origineels te doen. Om dit te kunnen doen hebben we een budget van ongeveer 16 euro maar soms gebruiken we minder dan 16 euro en kunnen we een andere keer meer uitgeven voor een opkomst.
+							We zijn bijvoorbeeld een keer naar een schietvereniging geweest maar ook hebben we een soort kookwedstrijd gehouden.
+						</p>
+						<img id="berg" src="pictures/img_2943.jpg" alt="berg">
+						<p>
+							Ook moeten we twee kampen organiseren één met pasen en één in de zomer. Hiervoor moeten we zelf betalen en halen we geld op door te helpen met de marathon van Rotterdam door bekertjes water uit te delen, ook staan we met Koningsdag op een klein festival in Ouderkerk aan den IJssel met een schiettent, kindertent en verzorgen we daar de cetering.
+							Voordat we het kamp gaan organiseren maken we groepjes die gaan zoeken naar: Wat we welke dag gaan eten, wat we aan uitjes gaan doen en naar welke campings we gaan en of de routes er op aansluiten.
+						</p>
+					</article>
+				</div>
+				<div class="slide" id="slide4">
+					<article>
+						<h1>Over mij</h1>
+						<h2>Curriculum vitae</h2>
+						<h3>Opleiding</h3>
+						<table>
+							<tr>
+								<td>sep 2013 t/m jun 2017</td>
+								<td>HAVO IJssel college in Capelle aan den IJssel.</td>
+							</tr>
+							<tr>
+								<td>sep 2017 t/m heden</td>
+								<td>MBO applicatie ontwikkelaar op het Davinci college in Dordrecht.</td>
+							</tr>
+						</table>
+						<h3>Vaardigheden</h3>
+						<p>Ik kan goed overweg met computers en met de computertalen HTML, Python.</p>
+						<h3>Werkervaring</h3>
+						<p>-</p>
+					</article>
+				</div>
+			</div>
+			<div class="section" id="section3">
+				<article>
+      	  <h1>Applicatie ontwikkelaar</h1>
+      	  <h2>Verwachting</h2>
+      	  <p class="p2">mijn verwachting van dit beroep is dat ik veel moet gaan samen werken met collega's en dat ik veel ga typen.</p>
+      	  <h2>Toekomstbeeld</h2>
+      	  <p class="p2">
+      	    Na het het afmaken van deze opleiding wil ik naar HBO om de opleiding informatica doen. Daarna ga ik werken als programmeur en misschien ga ik doorleren binnen de ICT.
+      	  </p>
+      	</article>
+			</div>
+		</div>
+	</body>
 </html>
